@@ -1,0 +1,294 @@
+:root {
+  --dark-gray-color: #333333;
+  --light-gray-color: #f2f2f2;
+  --white-color: #fbfbfd;
+  --blue-color: #68a4e1;
+  --black-color: black;
+  --padding: 12px;
+  --nav-padding: 20px;
+
+  --pro_font_size: 3.5rem;
+  --pro-info-size: 1.6rem;
+  --pro-more-size: 1.3rem;
+  --pro-price-size: 1rem;
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* 박스 사이즈는 padding과 border이 포함된 크기로 설정 */
+}
+
+html {
+  font-size: 14px;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--dark-gray-color);
+  padding: 0.5rem 8rem;
+}
+
+a {
+  color: var(--light-gray-color);
+  text-decoration: none;
+  /* padding-right: var(--nav-padding); */
+}
+
+.nav .menu {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.nav .icons {
+  display: flex;
+}
+
+.nav .icons a {
+  display: flex;
+  color: var(--light-gray-color);
+  padding-right: var(--nav-padding);
+}
+
+.nav .apple_logo a {
+  font-size: 1.3em;
+  color: var(--light-gray-color);
+}
+
+.title_bar {
+  padding: var(--padding) 0;
+  font-size: var(--font-small);
+  font-weight: 900;
+  color: var(--dark-gray-color);
+  text-align: center;
+  /* background-color: var(--white-color); */
+}
+
+.title_bar a {
+  font-weight: 1000;
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.products {
+  padding-top: calc(var(--padding) * 2);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: red; */
+  align-items: center;
+}
+.products .pro1 {
+  width: 100%;
+  background-color: var(--light-gray-color);
+}
+
+.products > div {
+  margin-bottom: var(--padding);
+}
+
+.products .pro1 .pro1_background {
+  background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-og-202010?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1601435256000");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  /* width: 500px;
+  height: 300px; */
+  background-size: cover;
+}
+
+.products .pro1 .pro1_metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .pro1 .pro1_metadata .pro_name {
+  font-size: var(--pro_font_size);
+}
+
+.products .pro1 .pro1_metadata .pro_info {
+  font-size: var(--pro-info-size);
+}
+.products .pro1 .pro1_metadata .pro_price {
+  color: gray;
+  font-size: var(--pro-price-size);
+}
+.products .pro1 .pro1_metadata li {
+  font-weight: 700;
+  padding-top: var(--padding);
+}
+.pro_more a {
+  color: var(--blue-color);
+  font-size: var(--pro-more-size);
+  padding-right: var(--padding);
+}
+
+.products .pro2 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .pro2 .pro2_background {
+  background-image: url("https://9to5mac.com/wp-content/uploads/sites/6/2020/10/Screen-Shot-2020-10-13-at-13.46.52-PM.png");
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+
+.products .pro2 .pro2_metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .pro2 .pro2_metadata .pro_name {
+  font-size: var(--pro_font_size);
+}
+
+.products .pro2 .pro2_metadata .pro_info {
+  font-size: var(--pro-info-size);
+}
+.products .pro2 .pro2_metadata .pro_price {
+  color: gray;
+  font-size: var(--pro-price-size);
+}
+.products .pro2 .pro2_metadata li {
+  font-weight: 700;
+  padding-top: var(--padding);
+}
+
+.products .pro3 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .pro3 .pro3_background {
+  background-image: url("https://i.gadgets360cdn.com/products/large/ipad-air-2020-1910x800-1600198178.jpg");
+  display: flex;
+  width: 70vw;
+  height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+.products .pro3 .pro3_metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .pro3 .pro3_metadata .pro_name {
+  font-size: var(--pro_font_size);
+}
+
+.products .pro3 .pro3_metadata .pro_info {
+  font-size: var(--pro-info-size);
+}
+
+.products .pro3 .pro3_metadata li {
+  font-weight: 700;
+  padding-top: var(--padding);
+}
+
+.nav .hidden {
+  color: var(--light-gray-color);
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .products .pro1 .pro1_metadata .pro_name {
+    font-size: 2rem;
+  }
+  .products .pro1 .pro1_metadata .pro_info {
+    font-size: 1.1rem;
+  }
+  .products .pro1 {
+    padding-top: var(--nav-padding);
+  }
+  .products .pro1 .pro1_background {
+    background-position: center;
+  }
+  /* ----------------------------------------------------------- */
+  .products .pro2 .pro2_metadata .pro_name {
+    font-size: 2rem;
+  }
+  .products .pro2 .pro2_metadata .pro_info {
+    font-size: 1.1rem;
+  }
+  .products .pro2 {
+    padding-top: var(--nav-padding);
+  }
+  .products .pro2 .pro2_background {
+    background-image: url("https://www.istore.co.za/media/wysiwyg/iPhone_12Pro/iPhone_12_Pro_1.jpg");
+    background-position: center;
+  }
+  /* ----------------------------------------------------------- */
+  .products .pro3 .pro3_metadata .pro_name {
+    font-size: 2rem;
+  }
+  .products .pro3 .pro3_metadata .pro_info {
+    font-size: 1.1rem;
+  }
+  .products .pro3 {
+    padding-top: var(--nav-padding);
+    background-color: #ffffff;
+  }
+  .products .pro3 .pro3_background {
+    background-image: url("https://images.macrumors.com/article-new/2019/03/ipadairgreen.jpg");
+    background-position: center;
+    height: 70vh;
+  }
+
+  .nav .menu {
+    display: none;
+  }
+
+  .nav .icons .search_logo {
+    display: none;
+  }
+
+  .nav .hidden {
+    display: flex;
+  }
+
+  .nav {
+    padding: 2vw 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
